@@ -5,14 +5,18 @@ Download the recruitment data and save it in the format "recruitment_environment
 
 For Incentives Report:
 In BQ, type in the query: 
+
 SELECT token, d_130371375.d_266600170.d_731498909, d_130371375.d_266600170.d_222373868, d_130371375.d_266600170.d_787567527 FROM `nih-nci-dceg-connect-prod-6d04.Connect.participants` 
 WHERE d_130371375.d_266600170.d_731498909 = 353358909
+
 Save the file as a csv in your local drive, and upload it into SAS Enterprise Guide in the same way as for the recruitment data (above). This report does not use a separate macro file (unlike for the recruitment data above). Make sure to change all file paths to your own file path. 
 
 For Duplicate Report:
 In BQ, type in the query: 
+
 SELECT token, Connect_ID, d_827220437, d_512820379, d_821247024, d_914594314, state.d_148197146 FROM `nih-nci-dceg-connect-prod-6d04.Connect.participants`
 WHERE state.d_148197146 is not null
+
 Save the file as a csv in your local drive, and upload it into SAS Enterprise Guide in the same way as for the recruitment data (above). This report does not use a separate macro file (unlike for the recruitment data above). Make sure to change all file paths to your own file path. 
 
 For the BSI Pie Charts:
