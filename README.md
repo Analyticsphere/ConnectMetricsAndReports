@@ -13,7 +13,7 @@ WHERE d_130371375.d_266600170.d_731498909 = 353358909
 Save the file as a csv in your local drive, and upload it into SAS Enterprise Guide in the same way as for the recruitment data (above). This report does not use a separate macro file (unlike for the recruitment data above). Make sure to change all file paths to your own file path. 
 
 
-For Duplicate Report:
+For Duplicate Frequency and Trend Report:
 In BQ, type in the query: 
 
 SELECT token, Connect_ID, d_827220437, d_512820379, d_821247024, d_914594314, state.d_148197146 FROM `nih-nci-dceg-connect-prod-6d04.Connect.participants`
